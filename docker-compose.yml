@@ -1,0 +1,9 @@
+version: '3'
+services:
+  jpnb:
+    restart: always
+    ports:
+      - 8989:8888
+    volumes:
+      - ./data:/home/jovyan
+    image: jupyter/minimal-notebook
