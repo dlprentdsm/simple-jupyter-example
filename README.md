@@ -5,3 +5,6 @@
 - Mounts ```data``` dir so you can easily save your work or add data.
 
 Use a different base image as desired.
+
+Use alternate docker-compose file if desired, with added services, like redis or postgres for you to interact with in your notbook, eg:
+-  ```docker-compose -f docker-compose-redis.yml up -d && docker-compose -f docker-compose-redis.yml logs -f```
